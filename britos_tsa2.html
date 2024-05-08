@@ -1,0 +1,227 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <form>
+      <center>
+      <label for="ndex">National Dex</label>
+      <input type="number" id="ndex" name="ndex" min="1" />
+      <br />
+      <br />
+      <input type="radio" id="gen1" name="generation" value="Generation 1" />
+      <label for="gen1"> Generation 1</label>
+      <input type="radio" id="gen2" name="generation" value="Generation 2" />
+      <label for="gen2"> Generation 2</label>
+      <input type="radio" id="gen3" name="generation" value="Generation 3" />
+      <label for="gen3"> Generation 3</label>
+      <input type="radio" id="gen4" name="generation" value="Generation 4" />
+      <label for="gen4"> Generation 4</label>
+      <input type="radio" id="gen5" name="generation" value="Generation 5" />
+      <label for="gen5"> Generation 5</label>
+      <br />
+      <br />
+      <label for="pname">Pokemon Name</label>
+      <input type="text" id="pname" name="pname" />
+      <br />
+      <br />
+      <label for="pimage">Image:</label>
+      <input type="file" id="pimage" />
+      <br />
+      <br />
+      <label for="type1">Type 1:</label>
+      <input list="types1" name="type1" id="type1" />
+      <datalist id="types1">
+        <option value="Fire"></option>
+        <option value="Poison"></option>
+        <option value="Water"></option>
+        <option value="Grass"></option>
+        <option value="Dark"></option>
+        <option value="Dragon"></option>
+        <option value="Psychic"></option>
+        <option value="Ground"></option>
+        <option value="Rock"></option>
+        <option value="Fairy"></option>
+        <option value="Fighting"></option>
+        <option value="Flying"></option>
+        <option value="Electric"></option>
+        <option value="Normal"></option>
+        <option value="Steel"></option>
+        <option value="Ice"></option>
+        <option value="Bug"></option>
+        <option value="Ghost"></option>
+      </datalist>
+      <label for="type2">Type 2:</label>
+      <input list="types2" name="type2" id="type2" />
+      <datalist id="types2">
+        <option value="Fire"></option>
+        <option value="Poison"></option>
+        <option value="Water"></option>
+        <option value="Grass"></option>
+        <option value="Dark"></option>
+        <option value="Dragon"></option>
+        <option value="Psychic"></option>
+        <option value="Ground"></option>
+        <option value="Rock"></option>
+        <option value="Fairy"></option>
+        <option value="Fighting"></option>
+        <option value="Flying"></option>
+        <option value="Electric"></option>
+        <option value="Normal"></option>
+        <option value="Steel"></option>
+        <option value="Ice"></option>
+        <option value="Bug"></option>
+        <option value="Ghost"></option>
+      </datalist>
+      <br />
+      <br />
+      <label for="efrom">Evolves from:</label>
+      <input type="text" name="efrom" id="efrom" />
+      <label for="eto">Evolves to:</label>
+      <input type="text" name="eto" id="eto" />
+      <br />
+      <br />
+      <label for="nn">Nickname:</label>
+      <input type="text" name="nn" id="nn" />
+      <br />
+      <br />
+      <label for="bday">Birthday:</label>
+      <input type="date" name="bday" id="bday" />
+      <br />
+      <br />
+      <input type="submit">
+    </form>
+    </center>
+    <table border="2px" style="width: 100%">
+        <tr>
+            <th>National Dex</th>
+            <th>Generation</th>
+            <th>Pokemon Name</th>
+            <th>Image</th>
+            <th>Type 1</th>
+            <th>Type 2</th>
+            <th>Evolves From</th>
+            <th>Evolves To</th>
+            <th>Nickname</th>
+            <th>Birthday</th>
+        </tr>
+        <tr>
+            <td align="center">#001</td>
+            <td align="center">Generation 9</td>
+            <td align="center">Britos</td>
+            <td align="center"><img src="https://scontent.fmnl31-1.fna.fbcdn.net/v/t39.30808-6/439695030_1639786736795616_4120491293297912882_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFwFB659OArkq8F7ZVZNfCUrBwANzyujEKsHAA3PK6MQnJtWHwf-lzfABkjs-KSXLdTeaca2qroPLxOu9LpRHJ8&_nc_ohc=plrvqNW-Q3wQ7kNvgGFew78&_nc_ht=scontent.fmnl31-1.fna&oh=00_AfCtemzJxWGmm-bV5Q1whmUNMp2tDnJUBTrG6QI17wye6w&oe=6640E841" alt="britosimage" width="100"></td>
+            <td align="center" colspan="2" bgcolor="black" style="color:white">Dark</td>
+            <td align="center">Nanay Mo</td>
+            <td align="center">Tito Mo</td>
+            <td align="center">rjbrst</td>
+            <td align="center">08-25-2005</td>
+        </tr>
+        <tr>
+            <td align="center">#0260</td>
+            <td align="center">Generation 3</td>
+            <td align="center">Swampert</td>
+            <td><img src="https://archives.bulbagarden.net/media/upload/thumb/3/34/0260Swampert.png/375px-0260Swampert.png" alt="swampert" width="100"></td>
+            <td align="center" bgcolor="blue" style="color:white">Water</td>
+            <td align ="center" bgcolor="#E2BF65" style="color:white">Ground</td>
+            <td align="center">Marshtomp</td>
+            <td align="center"> - </td>
+            <td align="center">Stomper</td>
+            <td align="center">03-24-2004</td>
+        </tr>
+        <tr align="center">
+            <td>#0286</td>
+            <td>Generation 3</td>
+            <td>Breloom</td>
+            <td><img src="https://archives.bulbagarden.net/media/upload/thumb/e/ee/0286Breloom.png/375px-0286Breloom.png" alt="breloom" width="100"></td>
+            <td bgcolor="green" style="color: white;">Grass</td>
+            <td bgcolor="red" style="color: white;">Fighting</td>
+            <td>Shroomish</td>
+            <td> - </td>
+            <td>Luigi</td>
+            <td>05-07-2004</td>
+        </tr>
+        <tr align="center">
+            <td>#0497</td>
+            <td>Generation 5</td>
+            <td>Serperior</td>
+            <td><img src="https://archives.bulbagarden.net/media/upload/thumb/a/a7/0497Serperior.png/375px-0497Serperior.png" alt="serperior" width="100"></td>
+            <td colspan="2" bgcolor="green" style="color: white;">Grass</td>
+            <td>Servine</td>
+            <td> - </td>
+            <td>Slither</td>
+            <td>06-08-2005</td>
+        </tr>
+        <tr align="center">
+            <td>#0560</td>
+            <td>Generation 5</td>
+            <td>Scrafty</td>
+            <td><img src="https://archives.bulbagarden.net/media/upload/thumb/8/84/0560Scrafty.png/375px-0560Scrafty.png" alt="scrafty" width="100"></td>
+            <td bgcolor="black" style="color: white;">Dark</td>
+            <td bgcolor="red" style="color: white;">Fighting</td>
+            <td>Scraggy</td>
+            <td> - </td>
+            <td>Baki</td>
+            <td>08-08-2006</td>
+        </tr>
+        <tr align="center">
+            <td>#0658</td>
+            <td>Generation 6</td>
+            <td>Greninja</td>
+            <td><img src="https://archives.bulbagarden.net/media/upload/thumb/d/d9/0658Greninja.png/375px-0658Greninja.png" alt="greninja" width="100"></td>
+            <td bgcolor="blue" style="color: white;">Water</td>
+            <td bgcolor="black" style="color: white;">Dark</td>
+            <td>Frogadier</td>
+            <td> - </td>
+            <td>AshKetch</td>
+            <td>09-12-2006</td>
+        </tr>
+        <tr align="center">
+            <td>#0462</td>
+            <td>Generation 4</td>
+            <td>Magnezone</td>
+            <td><img src="https://archives.bulbagarden.net/media/upload/thumb/f/f5/0462Magnezone.png/375px-0462Magnezone.png" alt="magnezone" width="100"></td>
+            <td bgcolor="yellow" style="color: black;">Electric</td>
+            <td bgcolor="gray" style="color: white;">Steel</td>
+            <td>Magneton</td>
+            <td> - </td>
+            <td>RoboDog</td>
+            <td>10-12-2006</td>
+        </tr>
+        <tr align="center">
+            <td>#0390</td>
+            <td>Generation 4</td>
+            <td>Chimchar</td>
+            <td><img src="https://archives.bulbagarden.net/media/upload/thumb/9/91/0390Chimchar.png/375px-0390Chimchar.png" alt="chimchar" width="100"></td>
+            <td colspan="2" bgcolor="orange" style="color: white;">Fire</td>
+            <td> - </td>
+            <td> - </td>
+            <td>Vin</td>
+            <td>12-12-2007</td>
+        </tr>
+        <tr align="center">
+            <td>#0350</td>
+            <td>Generation 3</td>
+            <td>Milotic</td>
+            <td><img src="https://archives.bulbagarden.net/media/upload/thumb/5/55/0350Milotic.png/375px-0350Milotic.png" alt="milotic" width="100"></td>
+            <td colspan="2" bgcolor="blue" style="color: white;">Water</td>
+            <td>Feebas</td>
+            <td> - </td>
+            <td>Min</td>
+            <td>11-20-2008</td>
+        </tr>
+        <tr align="center">
+            <td>#0245</td>
+            <td>Generation 2</td>
+            <td>Suicune</td>
+            <td><img src="https://archives.bulbagarden.net/media/upload/thumb/d/dc/0245Suicune.png/375px-0245Suicune.png" alt="suicune" width="100"></td>
+            <td colspan="2" bgcolor="blue" style="color: white;">Water</td>
+            <td> - </td>
+            <td> - </td>
+            <td>Denn</td>
+            <td>11-15-2005</td>
+        </tr>
+    </table>
+  </body>
+</html>
