@@ -20,7 +20,7 @@ body {
 
 .title {
   margin-top: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
   color: white;
   font-family: "Merriweather";
@@ -33,9 +33,18 @@ p {
   text-align: center;
   font-family: "Barlow";
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .date {
   font-weight: 500;
+}
+
+.subheading {
+  margin-top: 10px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-family: "Merriweather";
+  font-size: 1.51rem;
+  color: white;
 }
