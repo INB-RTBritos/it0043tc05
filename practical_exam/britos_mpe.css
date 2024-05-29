@@ -14,7 +14,7 @@ body {
 }
 
 .flex-container {
-  background-image: url(/practical_exam/background.png);
+  background-image: url("background.png");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -126,7 +126,7 @@ img {
   #psyduck:hover,
   #dratini:hover,
   #rattata:hover {
-    background-image: url(/practical_exam/hoverbackground.png);
+    background-image: url("hoverbackground.png");
     background-size: cover;
     background-position: center;
     transition: ease-in;
