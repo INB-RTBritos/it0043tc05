@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  justify-content: center;
+}
+
+.flex-container {
+  background-image: url(/practical_exam/background.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 10px;
+}
+.card {
+  width: auto;
+  height: auto;
+  box-shadow: black 0px 5px 10px;
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 10px;
+  margin: 1rem 1rem;
+}
+
+p {
+  display: none;
+  color: white;
+}
+img {
+  width: 250px;
+  padding: 0.5 rem;
+}
+
+.type {
+  display: none;
+}
+.pokeball {
+  display: none;
+}
+
+#squirtle {
+  background-color: rgb(96, 167, 178);
+}
+
+#charmander {
+  background-color: rgba(232, 98, 7, 255);
+}
+#mew {
+  background-color: rgba(232, 181, 166, 255);
+}
+
+#snorlax {
+  background-color: rgba(13, 92, 158, 255);
+}
+#bulbasaur {
+  background-color: rgba(67, 181, 48, 255);
+}
+#pikachu {
+  background-color: rgba(255, 212, 0, 255);
+}
+#eevee {
+  background-color: rgba(211, 150, 76, 255);
+}
+#jigglypuff {
+  background-color: rgba(239, 163, 204, 255);
+}
+#pidgey {
+  background-color: rgba(226, 156, 55, 255);
+}
+#psyduck {
+  background-color: rgba(255, 212, 0, 255);
+}
+
+#dratini {
+  background-color: rgba(26, 147, 214, 255);
+}
+
+#rattata {
+  background-color: rgba(169, 98, 232, 255);
+}
+
+@media (max-width: 1026px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  img {
+    width: 90px;
+  }
+  p {
+    display: inline-block;
+    font-size: 2rem;
+  }
+  .pokeball {
+    display: inline-block;
+  }
+  #squirtle:hover,
+  #charmander:hover,
+  #bulbasaur:hover,
+  #pikachu:hover,
+  #eevee:hover,
+  #jigglypuff:hover,
+  #mew:hover,
+  #snorlax:hover,
+  #pidgey:hover,
+  #psyduck:hover,
+  #dratini:hover,
+  #rattata:hover {
+    background-image: url(/practical_exam/hoverbackground.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-in;
+    transition-duration: 0.25s;
+  }
+}
+
+@media (max-width: 521px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .card {
+    display: block;
+    text-align: center;
+  }
+  img {
+    width: 175px;
+  }
+  p {
+    display: block;
+  }
+  .pokeball {
+    display: none;
+  }
+
+  #water {
+    display: inline-block;
+    background-color: rgb(124, 224, 225);
+    justify-content: center;
+    width: 150px;
+    padding: 0.25rem;
+    margin: 0.05rem;
+    border-radius: 10px;
+  }
+  #fire {
+    display: inline-block;
+    background-color: rgba(255, 173, 64, 255);
+    justify-content: center;
+    width: 150px;
+    padding: 0.25rem;
+    margin: 0.05rem;
+    border-radius: 10px;
+  }
+  #grass {
+    display: inline-block;
+    background-color: rgba(26, 142, 28, 255);
+    justify-content: center;
+    width: 150px;
+    padding: 0.25rem;
+    margin: 0.05rem;
+    border-radius: 10px;
+  }
+  #poison {
+    display: inline-block;
+    background-color: rgba(136, 68, 216, 255);
+    justify-content: center;
+    width: 150px;
+    padding: 0.25rem;
+    margin: 0.05rem;
+    border-radius: 10px;
+  }
+  #electric {
+    display: inline-block;
+    background-color: rgba(255, 176, 0, 255);
+    justify-content: center;
+    width: 150px;
+    padding: 0.25rem;
+    margin: 0.05rem;
+    border-radius: 10px;
+  }
+  #normal {
+    display: inline-block;
+    background-color: rgba(255, 236, 210, 255);
+    justify-content: center;
+    color: grey;
+    width: 150px;
+    padding: 0.25rem;
+    margin: 0.05rem;
+    border-radius: 10px;
+  }
+  #fairy {
+    display: inline-block;
+    background-color: rgba(255, 202, 232, 255);
+    justify-content: center;
+    color: grey;
+    width: 150px;
+    padding: 0.25rem;
+    margin: 0.05rem;
+    border-radius: 10px;
+  }
+  #psychic {
+    display: inline-block;
+    background-color: rgba(234, 129, 189, 255);
+    justify-content: center;
+    width: 150px;
+    padding: 0.25rem;
+    margin: 0.05rem;
+    border-radius: 10px;
+  }
+  #flying {
+    display: inline-block;
+    background-color: rgba(226, 222, 232, 255);
+    color: grey;
+    justify-content: center;
+    width: 150px;
+    padding: 0.25rem;
+    margin: 0.05rem;
+    border-radius: 10px;
+  }
+  #dragon {
+    display: inline-block;
+    background-color: rgba(54, 98, 206, 255);
+    justify-content: center;
+    width: 150px;
+    padding: 0.25rem;
+    margin: 0.05rem;
+    border-radius: 10px;
+  }
+}
