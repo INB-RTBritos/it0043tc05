@@ -134,7 +134,7 @@ img {
   }
 }
 
-@media (max-width: 521px) {
+@media (max-width: 549px) {
   .flex-container {
     flex-direction: column;
   }
