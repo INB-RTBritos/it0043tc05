@@ -110,6 +110,9 @@ img {
   img {
     width: 90px;
   }
+  img:hover {
+    transform: scale(1.25);
+  }
   p {
     display: inline-block;
     font-size: 2rem;
