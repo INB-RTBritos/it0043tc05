@@ -6,6 +6,7 @@
   border: 0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  transition: 0.5s all ease;
 }
 
 body {
@@ -14,14 +15,15 @@ body {
 }
 
 .flex-container {
+  flex-wrap: wrap;
   background-image: url("img/background.png");
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   border-radius: 1rem;
   text-align: center;
   margin: 1rem;
-  flex-wrap: wrap;
   padding: 1rem;
   gap: 10px;
 }
@@ -44,7 +46,7 @@ p {
 }
 img {
   width: 250px;
-  padding: 0.5 rem;
+  padding: 0.5rem;
 }
 
 .type {
