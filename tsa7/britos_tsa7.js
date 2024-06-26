@@ -1,5 +1,5 @@
 let container = document.getElementById("flex-container");
-let changer;
+let grow;
 
 function Reset() {
   container.style.flexDirection = "row";
@@ -7,12 +7,20 @@ function Reset() {
   container.style.alignItems = "stretch";
   container.style.gap = "0px";
   document.getElementById("gap").value = 0;
+
+  document.getElementById("grow1").value = 0;
+  document.getElementById("grow2").value = 0;
+  document.getElementById("grow3").value = 0;
+
+
+  FlexGrow(1);
+  FlexGrow(2);
+  FlexGrow(3);
 }
 
-function Gap() {
+function UpdateGap() {
   const gap = document.getElementById("gap").value;
-  container.style.gap = "${gap} px";
-  console.log(gap);
+  container.style.gap = `${gap}px`;
 }
 
 function Direction(x) {
@@ -58,10 +66,28 @@ function AlignItems(x) {
   }
 }
 
-function FlexGrow(x) {
+function FlexGrow(number) {
+  const grow = document.getElementById(`grow${number}`).value;
+  document.getElementById(`box${number}`).style.flexGrow = grow;
+}
+
+function UpdateGrow(x) {
   switch (x) {
     case 1:
-      container.style.flexGrow = "1px";
+      document.getElementById("box1").style.flexGrow++;
+      document.getElementById("box2").style.flexGrow++;
+      document.getElementById("box3").style.flexGrow++;
+      document.getElementById("grow1").value++;
+      document.getElementById("grow2").value++;
+      document.getElementById("grow3").value++;
+      break;
+      case 2:
+      document.getElementById("box1").style.flexGrow = 0;
+      document.getElementById("box2").style.flexGrow = 0;
+      document.getElementById("box3").style.flexGrow = 0;
+      document.getElementById("grow1").value = 0;
+      document.getElementById("grow2").value = 0;
+      document.getElementById("grow3").value = 0;
       break;
   }
 }

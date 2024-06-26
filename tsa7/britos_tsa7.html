@@ -1,61 +1,56 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOWEROFHANOIPEROBOX</title>
     <link rel="stylesheet" href="britos_tsa7.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="main-container">
-      <div class="buttons">
-        <button onclick="Reset()">Reset All</button>
-        <label for="gap">Gap</label>
-        <input type="number" id="gap" value="0" oninput="Gap()" />
-
-        <h1 class="title">Flex Direction</h1>
-        <div id="flex-direction">
-          <button id="row" onclick="Direction(1)">Row</button>
-          <button id="column" onclick="Direction(2)">Column</button>
+            <div class = "operations" id="start-buttons">
+            <button id="reset" onclick="Reset()">Reset All</button>
+            <label for="gap">Gap</label>
+            <input type="number" id="gap" value="0" min="0" oninput="UpdateGap()" />
+            </div> 
+            <div class = "operations" id="flex-direction">
+                <p class="title">Flex Direction</p>
+                <button onclick="Direction(1)">Row</button>
+                <button onclick="Direction(2)">Column</button>
+            </div>
+            <div class = "operations" id="j-content">
+            <p class="title">Justify Content</p>
+                <button onclick="JustifyContent(1)">Start</button>
+                <button onclick="JustifyContent(2)">Center</button>
+                <button onclick="JustifyContent(3)">End</button>
+                <button onclick="JustifyContent(4)">Space Between</button>
+                <button onclick="JustifyContent(5)">Space Around</button>
+                <button onclick="JustifyContent(6)">Space Evenly</button>
+            </div>
+            <div class = "operations" id="align-items">
+            <p class="title">Align Items</p>
+                <button onclick="AlignItems(1)">Start</button>
+                <button onclick="AlignItems(2)">Center</button>
+                <button onclick="AlignItems(3)">End</button>
+            </div>
+            <div class = "operations" id="flex-grow">
+            <p class="title">Flex Grow</p>
+                <button onclick="UpdateGrow(2)">Reset</button>
+                <button onclick="UpdateGrow(1)">Grow All</button>
+                <label for="grow1">Box 1</label>
+                <input type="number" id="grow1" min="0" value="0" oninput="FlexGrow(1)" />
+                <label for="grow2">Box 2</label>
+                <input type="number" id="grow2" min="0" value="0" oninput="FlexGrow(2)" />
+                <label for="grow3">Box 3</label>
+                <input type="number" id="grow3" min="0" value="0" oninput="FlexGrow(3)" />
+            </div>
+        <div class = "operations" id="flex-container">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2</div>
+            <div class="box" id="box3">3</div>
         </div>
-        <h1 class="title">Justify Content</h1>
-        <div id="j-content">
-          <button id="start" onclick="JustifyContent(1)">Start</button>
-          <button id="center" onclick="JustifyContent(2)">Center</button>
-          <button id="end" onclick="JustifyContent(3)">End</button>
-          <button id="space-between" onclick="JustifyContent(4)">
-            Space Between
-          </button>
-          <button id="space-around" onclick="JustifyContent(5)">
-            Space Around
-          </button>
-          <button id="space-evenly" onclick="JustifyContent(6)">
-            Space Evenly
-          </button>
-        </div>
-        <h1 class="title">Align Items</h1>
-        <div id="align-items">
-          <button id="start1" onclick="AlignItems(1)">Start</button>
-          <button id="center1" onclick="AlignItems(2)">Center</button>
-          <button id="end1" onclick="AlignItems(3)">End</button>
-        </div>
-        <h1 class="title">Flex Grow</h1>
-        <div id="flex-grow">
-          <button id="reset">Reset</button>
-          <button id="grow-all" onclick="FlexGrow(1)">Grow All</button>
-          <label for="box-i1">Box 1</label>
-          <input type="number" id="box-i1" value="0" />
-          <label for="box-i2">Box 2</label>
-          <input type="number" id="box-i2" value="0" />
-          <label for="box-i3">Box 3</label>
-          <input type="number" id="box-i3" value="0" />
-        </div>
-      </div>
-      <div id="flex-container">
-        <div class="box" id="box1">1</div>
-        <div class="box" id="box2">2</div>
-        <div class="box" id="box3">3</div>
-      </div>
     </div>
     <script src="britos_tsa7.js"></script>
-  </body>
+</body>
+
 </html>
