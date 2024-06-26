@@ -52,6 +52,7 @@ body {
   grid-row: 1/2;
   border: 4px solid #ebc380;
   padding: 5px;
+  justify-content: start;
 }
 
 .box {
