@@ -112,19 +112,6 @@ p {
   text-shadow: 1px 2px 6px black, 1px 2px 6px black;
 }
 
-button {
-  border-radius: 25px;
-  font-size: 1.05rem;
-  margin: 5px;
-  width: 200px;
-  height: 35px;
-  display: inline-block;
-  font-family: "Inter";
-  background-color: #ebc380;
-  border: #ebc380;
-  box-shadow: 4px 5px 5px black;
-}
-
 button:hover,
 label:hover {
   background-image: url(violetflower2.png);
@@ -134,8 +121,21 @@ label:hover {
   transition-duration: 0.25s;
 }
 
+button {
+  border-radius: 25px;
+  font-size: 1.05rem;
+  margin: 5px;
+  width: 250px;
+  height: 35px;
+  display: inline-block;
+  font-family: "Inter";
+  background-color: #ebc380;
+  border: #ebc380;
+  box-shadow: 4px 5px 5px black;
+}
+
 label {
-  width: 200px;
+  width: 250px;
   height: 35px;
   padding: 5px;
   margin: 5px;
@@ -152,7 +152,7 @@ label {
 input {
   font-family: "Inter";
   text-align: center;
-  width: 200px;
+  width: 250px;
   height: 25px;
   margin: 3px;
   background-color: #ebc380;
