@@ -7,31 +7,6 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-/* CSS */
-
-.button-50:focus {
-  text-decoration: none;
-}
-
-.button-50:hover {
-  text-decoration: none;
-}
-
-.button-50:active {
-  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
-  outline: 0;
-}
-
-.button-50:not([disabled]):active {
-  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-  transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-  .button-50 {
-    padding: 12px 50px;
-  }
-}
 body {
   background-image: url(background.png);
   background-size: cover;
