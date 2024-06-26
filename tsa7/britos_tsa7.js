@@ -4,14 +4,13 @@ let grow;
 function Reset() {
   container.style.flexDirection = "row";
   container.style.justifyContent = "start";
-  container.style.alignItems = "stretch";
+  container.style.alignItems = "start";
   container.style.gap = "0px";
   document.getElementById("gap").value = 0;
 
   document.getElementById("grow1").value = 0;
   document.getElementById("grow2").value = 0;
   document.getElementById("grow3").value = 0;
-
 
   FlexGrow(1);
   FlexGrow(2);
@@ -81,7 +80,7 @@ function UpdateGrow(x) {
       document.getElementById("grow2").value++;
       document.getElementById("grow3").value++;
       break;
-      case 2:
+    case 2:
       document.getElementById("box1").style.flexGrow = 0;
       document.getElementById("box2").style.flexGrow = 0;
       document.getElementById("box3").style.flexGrow = 0;
