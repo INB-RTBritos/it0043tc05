@@ -5,8 +5,33 @@
   box-sizing: border-box;
   transition: 0.4s all ease;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+/* CSS */
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}
 body {
   background-image: url(background.png);
   background-size: cover;
@@ -15,7 +40,7 @@ body {
 .main-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
+  gap: 20px;
   padding: 10px;
 }
 
@@ -39,9 +64,10 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 2rem;
 }
-
 
 /* #box1 {
   background-color: blue;
@@ -69,7 +95,7 @@ body {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-#align-items{
+#align-items {
   grid-column: 3/4;
   grid-row: 2/3;
 }
@@ -83,30 +109,52 @@ p {
   font-family: "Inter";
   font-weight: 700;
   font-size: 1.25rem;
+  text-shadow: 1px 2px 6px black, 1px 2px 6px black;
 }
 
 button {
   border-radius: 25px;
-  background-color: #ebc380;
   font-size: 1.05rem;
   margin: 5px;
-  width: 150px;
+  width: 200px;
   height: 35px;
   display: inline-block;
+  font-family: "Inter";
+  background-color: #ebc380;
+  border: #ebc380;
+  box-shadow: 4px 5px 5px black;
+}
+
+button:hover,
+label:hover {
+  background-image: url(violetflower2.png);
+  background-size: cover;
+  background-position: center;
+  transition: ease-in;
+  transition-duration: 0.25s;
 }
 
 label {
-  width: 150px;
+  width: 200px;
   height: 35px;
   padding: 5px;
-  background-color: pink;
+  margin: 5px;
+  background-color: #6979a7;
   font-size: 1.05rem;
   border-radius: 25px;
   text-align: center;
   display: inline-block;
+  font-family: "Inter";
+  box-shadow: 4px 5px 5px black;
+
+  /* color: white; */
 }
 input {
-  width: 130px;
-  margin: 5px;
+  font-family: "Inter";
+  text-align: center;
+  width: 200px;
+  height: 25px;
+  margin: 3px;
+  background-color: #ebc380;
+  border: #ebc380;
 }
-
