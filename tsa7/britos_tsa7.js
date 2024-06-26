@@ -4,7 +4,7 @@ let grow;
 function Reset() {
   container.style.flexDirection = "row";
   container.style.justifyContent = "start";
-  container.style.alignItems = "start";
+  container.style.alignItems = "stretch";
   container.style.gap = "0px";
   document.getElementById("gap").value = 0;
 
