@@ -157,6 +157,7 @@ input {
   margin: 3px;
   background-color: #ebc380;
   border: #ebc380;
+  border-radius: 25px;
 }
 /* .operations {
   border: 2px solid black;
