@@ -1,5 +1,4 @@
 let container = document.getElementById("flex-container");
-let grow;
 
 function Reset() {
   container.style.flexDirection = "row";
