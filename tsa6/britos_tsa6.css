@@ -200,22 +200,19 @@ img {
   justify-content: space-between;
 }
 
-.slider p {
-  font-size: 1.1rem;
-}
-
 .slider-container p {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
   position: relative;
+  font-size: 1.1rem;
 }
 
 .slider-container p:hover {
   background-color: #a1a1a0;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 4px 4px 0 0;
   color: #ebc380;
   font-weight: 700;
   text-align: center;
@@ -229,7 +226,7 @@ img {
   width: 100%;
   height: 20px;
   background-color: transparent;
-  margin-bottom: 3px;
+  margin-bottom: 1px;
 }
 
 #side-img1 {
@@ -373,6 +370,16 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .slider-container p {
+    font-size: 1.2rem;
+  }
+
+  .character-container .title {
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+  }
+
   .character-container {
     grid-column: 1/2;
     grid-row: 4/5;
@@ -449,7 +456,8 @@ img {
 
   .novel-container img {
     display: flex;
-    width: 120px;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .novel {
@@ -459,6 +467,9 @@ img {
   .novel-container p {
     display: flex;
     font-size: 1.2rem;
+    padding: 5px;
+    flex-wrap: wrap;
+    width: fit-content;
   }
 
   #about {
@@ -489,12 +500,16 @@ img {
 
   .sub-details {
     font-size: 1.2rem;
+    line-height: 1.2;
   }
 
   #side-img1 {
-    object-position: right;
     height: 100%;
     display: flex;
+  }
+
+  #side-img1 img{
+    object-position: right;
   }
 
   #side-img2 {
@@ -514,5 +529,33 @@ img {
   }
 }
 
-@media (max-width: 1501) {
+@media (max-width: 1390px) {
+  .grid-container{
+    grid-template-columns: repeat(auto);
+  }
+  .novel-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    /* align-items: center;
+    justify-content: center; */
+  }
+
+  .novel-container img {
+    width: 150px;
+  }
+
+  .novel-details {
+    display: none;
+  }
+
+  #side-img1 img {
+    object-position: right;
+    object-fit:cover;
+  }
+
+  #about .details {
+    display: flex;
+  }
+  
 }
