@@ -33,7 +33,9 @@ nav .nav-container {
 .nav-list {
   display: flex;
 }
-
+.logo {
+  pointer-events: none;
+}
 nav {
   padding: 5px;
   height: fit-content;
@@ -570,6 +572,7 @@ img {
   }
   .logo {
     width: 100%;
+    pointer-events: auto;
   }
 
   .nav-container {
@@ -652,14 +655,16 @@ img {
 @media (max-width: 950px) {
   .grid-container {
     width: 600px;
-    
+  }
+  .logo {
+    pointer-events: auto;
   }
   #banner {
     width: 100%;
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  #banner img{
+  #banner img {
     width: 615px;
     padding: 0;
   }
