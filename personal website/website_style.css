@@ -642,6 +642,9 @@ footer p {
   .logo img {
     padding: 1rem;
   }
+  .logo p {
+    display: none;
+  }
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
