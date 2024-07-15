@@ -376,6 +376,7 @@ section {
   text-decoration: underline;
   text-underline-offset: 7px;
   text-decoration-color: rgb(181, 181, 181);
+  cursor: default;
 }
 
 .language-icon {
