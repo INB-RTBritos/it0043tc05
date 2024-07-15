@@ -38,6 +38,10 @@ nav {
   height: 10vh;
 }
 
+.logo img {
+  height: 3.5rem;
+}
+
 .nav-links {
   gap: 32px;
   list-style: none;
@@ -168,6 +172,10 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.section-pic-container img {
+  border-radius: 10px;
 }
 
 .section-text {
@@ -510,6 +518,9 @@ footer p {
   .about-container {
     margin-top: 0;
   }
+  .title {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -566,5 +577,6 @@ footer p {
   }
   .title {
     font-size: 2rem;
+    text-align: center;
   }
 }
