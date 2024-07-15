@@ -40,6 +40,7 @@ nav {
 
 .logo img {
   height: 3.5rem;
+  padding: 3px;
 }
 
 .nav-links {
@@ -150,7 +151,7 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: 100vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -164,7 +165,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 86vh;
+  height: 90vh;
 }
 
 .section-pic-container {
@@ -209,6 +210,7 @@ section {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-style: normal;
+  margin-bottom: 5px;
 }
 
 #social-container {
@@ -308,6 +310,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  min-height: fit-content;
 }
 
 .section-container {
@@ -345,6 +348,8 @@ section {
   font-family: "Nunito";
   font-size: 1rem;
   color: lightgray;
+  gap: 4px;
+  padding: 5px;
 }
 
 .il-container {
@@ -352,7 +357,11 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
+  justify-items: center;
+  justify-content: start;
+  align-items: center;
+  padding: 3px;
 }
 
 .il-container p:hover,
@@ -364,24 +373,23 @@ section {
 }
 
 .language-icon {
-  height: 1.5rem;
+  height: 1.2rem;
+  align-items: center;
+  justify-items: center;
 }
 
-#Skills {
-  position: relative;
-}
-
-.experience-subtitle {
+.portfolio-subtitle {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.portfolio-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .article-container {
@@ -400,6 +408,13 @@ section {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  transition: all 300ms ease-in-out;
+  flex-wrap: wrap;
+}
+
+.color-container:hover {
+  box-shadow: 8px 8px 0px white;
+  transform: scale(1.02);
 }
 
 .portfolio-img {
@@ -419,6 +434,10 @@ section {
 .portfolio-button {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.one-button {
+  width: 304px;
 }
 
 #Contact {
@@ -470,9 +489,9 @@ footer p {
   text-align: center;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1900px) {
   #Home {
-    height: 83vh;
+    height: 90vh;
     margin-bottom: 6rem;
   }
   .about-container {
@@ -484,6 +503,28 @@ footer p {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  #Home {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  #Contact,
+  #Portfolio,
+  #About {
+    height: fit-content;
+  }
+  .about-details-container {
+    line-height: 0.9;
+  }
+
+  #About .title {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #nav-bar {
     display: none;
@@ -492,13 +533,17 @@ footer p {
   #hamburger-nav {
     display: flex;
   }
+
   #Portfolio,
-  .experience-details-container {
+  .portfolio-details-container {
     margin-top: 2rem;
   }
   #Home,
   .section-container {
     display: block;
+  }
+  #Home .title {
+    text-align: center;
   }
   .icon-arrow {
     display: none;
@@ -514,12 +559,19 @@ footer p {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
   }
   .about-container {
     margin-top: 0;
   }
   .title {
     text-align: center;
+  }
+  .section-pic-container img {
+    align-self: center;
+    height: 100%;
   }
 }
 
@@ -528,16 +580,21 @@ footer p {
   footer {
     height: 40vh;
   }
-
   #Home {
     height: 83vh;
     margin-bottom: 0;
+    max-height: fit-content;
   }
-
-  article {
-    font-size: 1rem;
+  #Home .title {
+    text-align: center;
   }
-
+  #Home .section-p2 {
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
+  #About {
+    height: fit-content;
+  }
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
@@ -556,11 +613,11 @@ footer p {
   a {
     font-size: 1rem;
   }
-  .experience-subtitle {
+  .portfolio-subtitle {
     font-size: 1.25rem;
   }
-  .logo {
-    font-size: 1.5rem;
+  .logo img {
+    padding: 1rem;
   }
   .nav-links {
     flex-direction: column;
@@ -576,7 +633,21 @@ footer p {
     font-size: 1.25rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
+  }
+  .ltitle {
+    text-align: center;
+  }
+  .languages-container {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  .contact-icon {
+    height: 1.5rem;
+  }
+  #email-icon {
+    height: 1.5rem;
   }
 }
