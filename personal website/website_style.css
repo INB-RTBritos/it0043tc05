@@ -482,7 +482,11 @@ section {
   height: 1.75rem;
   cursor: default;
 }
-
+#Contact .section-p2 {
+  text-align: center;
+  width: 60%;
+  align-self: center;
+}
 #email-icon {
   height: 1.8rem;
 }
@@ -592,7 +596,7 @@ footer p {
 @media screen and (max-width: 600px) {
   #Contact,
   footer {
-    height: 40vh;
+    height: 30vh;
   }
   #Home {
     height: fit-content;
