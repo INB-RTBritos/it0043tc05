@@ -595,9 +595,12 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
-  #Contact,
+  #Contact {
+    height: 70vh;
+    max-height: fit-content;
+  }
   footer {
-    height: 30vh;
+    height: 20vh;
   }
   #Home {
     height: fit-content;
@@ -613,10 +616,6 @@ footer p {
   }
   #About {
     height: fit-content;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
   }
   .about-container,
   .contact-upper-container,
@@ -679,5 +678,8 @@ footer p {
   }
   footer p {
     font-size: 0.7rem;
+  }
+  #Contact .section-p2 {
+    line-height: 1;
   }
 }
