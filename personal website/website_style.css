@@ -278,7 +278,11 @@ section {
 .button-container {
   gap: 1rem;
 }
-
+#Home span,
+#About span {
+  color: white;
+  font-weight: 600;
+}
 #About {
   position: relative;
   box-shadow: 0 5px 4px -4px rgb(66, 64, 64);
